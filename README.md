@@ -5,15 +5,18 @@ A modern, responsive portfolio website built with Next.js, React, and Tailwind C
 ## Features
 
 - 🎨 **Modern UI/UX** - Beautiful, clean design with smooth animations
+- 🌙 **Dark Mode** - Toggle between light and dark themes with persistent preference
 - 📱 **Fully Responsive** - Works seamlessly on desktop, tablet, and mobile devices
 - 🚀 **Fast Performance** - Built with Next.js for optimal loading speeds
+- 📄 **Resume Section** - Preview and download resume PDF
 - 🎯 **Data Science Focus** - Sections tailored for data science professionals:
   - Hero section with introduction
   - About section highlighting expertise
   - Skills section with data science technologies
-  - Projects showcase with 6 example projects
+  - Projects showcase with real projects
   - Professional experience timeline
-  - Education and certifications
+  - Education section
+  - Resume preview and download
   - Contact form
 
 ## Tech Stack
@@ -79,16 +82,52 @@ npm start
    - Update education history
    - Add or modify certifications
 
-7. **Contact Section** (`components/Contact.tsx`):
+7. **Resume Section** (`components/Resume.tsx`):
+   - Add your resume PDF file to the `public/` folder as `resume.pdf`
+   - Update the resume file name if needed
+   - The section includes preview and download functionality
+
+8. **Contact Section** (`components/Contact.tsx`):
    - Update contact information
    - Configure form submission (currently uses alert - integrate with your backend/email service)
 
-8. **Navigation** (`components/Navigation.tsx`):
-   - Update the portfolio name/logo
+9. **Dark Mode**:
+   - Dark mode toggle is automatically available in the navigation
+   - Theme preference is saved to localStorage
+   - All components support dark mode styling
+
+### Adding Your Resume
+
+1. Place your resume PDF file in the `public/` folder
+2. Name it `resume.pdf` (or update the path in `components/Resume.tsx`)
+3. The resume section will automatically allow preview and download
+
+### Adding Your Profile Picture
+
+1. **Prepare your image:**
+   - Recommended: 400x400 pixels or larger (square works best)
+   - Formats: JPG, PNG, or WebP
+   - Keep file size under 500KB
+
+2. **Add to public folder:**
+   - Place your image in the `public/` folder
+   - Name it `profile.jpg` (or update the filename in `components/Hero.tsx`)
+
+3. **Update Hero component (if needed):**
+   - Open `components/Hero.tsx`
+   - Find: `const profilePicture = '/profile.jpg'`
+   - Change the filename if yours is different (e.g., `'/profile.png'`)
+   - Make sure `useProfilePicture = true`
+
+4. **To use initials instead:**
+   - Set `useProfilePicture = false` in `components/Hero.tsx`
+   - The component will show "KG" initials with a gradient background
+
+See `public/PROFILE_PICTURE_README.md` for detailed instructions.
 
 ### Styling
 
-The color scheme can be customized in `tailwind.config.js`. The primary color is set to a blue gradient, but you can modify it to match your preferences.
+The color scheme can be customized in `tailwind.config.js`. The accent color uses a purple gradient, and dark mode is fully supported. You can modify colors to match your preferences.
 
 ## Deployment
 

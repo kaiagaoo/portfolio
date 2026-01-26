@@ -70,48 +70,48 @@ export default function Experience() {
   return (
     <section
       id="experience"
-      className="py-20 bg-gradient-to-br from-primary-50 to-white"
+      className="py-24 bg-gradient-to-br from-gray-50 to-white dark:from-gray-900 dark:to-gray-800"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Experience & Leadership
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-primary-400 to-primary-600 mx-auto mb-4"></div>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <div className="section-divider mb-4"></div>
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Research, analytics, and leadership across tech and creative teams
           </p>
         </div>
 
-        <div className="space-y-8">
+        <div className="space-y-6">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md p-6 md:p-8 hover:shadow-xl transition-shadow duration-300 border-l-4 border-primary-600"
+              className="bg-white dark:bg-gray-800 rounded-xl shadow-soft p-6 md:p-8 card-hover border-l-4 border-accent-600 dark:border-accent-500"
             >
               <div className="flex items-start">
-                <div className="flex-shrink-0 mr-4">
-                  <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center">
-                    <FaBriefcase className="text-primary-600 text-xl" />
+                <div className="flex-shrink-0 mr-6">
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-500 to-accent-600 flex items-center justify-center shadow-medium">
+                    <FaBriefcase className="text-white text-xl" />
                   </div>
                 </div>
                 <div className="flex-grow">
-                  <h3 className="text-2xl font-semibold text-gray-900 mb-1">
+                  <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-1">
                     {exp.title}
                   </h3>
-                  <p className="text-lg text-primary-600 font-medium mb-1">
+                  <p className="text-lg text-accent-600 dark:text-accent-400 font-semibold mb-1">
                     {exp.company}
                   </p>
-                  <p className="text-gray-500 mb-4">
+                  <p className="text-gray-500 dark:text-gray-400 mb-5">
                     {exp.location} · {exp.period}
                   </p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
                     {exp.description.map((item, itemIndex) => (
                       <li
                         key={itemIndex}
-                        className="text-gray-700 flex items-start"
+                        className="text-gray-700 dark:text-gray-300 flex items-start leading-relaxed"
                       >
-                        <span className="text-primary-600 mr-2">•</span>
+                        <span className="text-accent-600 mr-3 mt-1.5">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
