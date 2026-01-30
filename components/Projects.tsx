@@ -14,13 +14,33 @@ export default function Projects() {
     },
     {
       title: 'Consumer Sentiment & Brand Insights from Amazon Fashion Reviews',
-      subtitle: 'Course Project | Oct 2025 – Present',
+      subtitle: 'Course Project | Oct 2025 – Nov 2025',
       description:
         'Analyzed 2.5M Amazon Fashion reviews to extract customer sentiment and brand perception using NLP techniques (VADER, BERT embeddings, topic modeling). Built regression and clustering models to identify key drivers of satisfaction and differentiate brand positioning. Visualized sentiment and keyword trends across categories through an interactive Streamlit dashboard, providing actionable insights for marketing and product strategy.',
       technologies: ['Python', 'VADER', 'BERT', 'Streamlit', 'Scikit-learn'],
       github: 'https://github.com/kaiagaoo/Consumer-Sentiment-Brand-Insights-nlp',
       demo: undefined,
       image: '👗',
+    },
+    {
+      title: 'Finfluencers Impact on trading behavior',
+      subtitle: 'Course Project | Nov 2025 – Dec 2025',
+      description:
+        'Investigated the causal impact of "finfluencer" (financial influencer) sentiment on stock trading liquidity using a balanced panel dataset of five major tech stocks (AAPL, AMZN, FB, NVDA, TSLA) from 2020 to 2022. Constructed a Panel OLS regression model with Entity Fixed Effects and clustered standard errors to control for unobserved heterogeneity and serial correlation. Identified that market volatility ($VIX) and negative retail sentiment ("fear") are the primary drivers of trading volume, with the final model explaining 41% of day-to-day variance in trading activity.',
+      technologies: ['Panel OLS Regression', 'Fixed Effects Modeling', 'Hypothesis Testing', 'Econometrics', 'Statistical Analysis'],
+      github: 'https://github.com/rgomez-ucb/finfluencers-retail-trading-stats',
+      demo: undefined,
+      image: '📈',
+    },
+    {
+      title: 'California Housing Market Affordability Analysis',
+      subtitle: 'Course Project | Nov 2025 – Dec 2025',
+      description:
+        'Investigated the "Gravity of Affordability" in California housing markets by synthesizing construction permit data (HUD), sales volume (Redfin), and demographic trends (NIH) from 1980–2022. Calculated Price-to-Income Ratios (PIR) to quantify affordability gaps across key counties like San Francisco and Riverside, revealing a decoupling of local incomes from housing costs. Visualized supply inelasticity and migration pressures using R (ggplot2) to demonstrate how low affordability drives population shifts despite stagnant construction responsiveness.',
+      technologies: ['R', 'ggplot2', 'dplyr', 'Hex', 'Data Visualization'],
+      github: 'https://github.com/kaiagaoo/CA-housing-market-affordability-analysis?tab=readme-ov-file',
+      demo: undefined,
+      image: '🏡',
     },
   ]
 
