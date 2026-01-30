@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from 'react-icons/fa'
+import { useState } from "react";
+import { FaGithub, FaLinkedin, FaEnvelope, FaArrowDown } from "react-icons/fa";
 
 export default function Hero() {
   // Match your filename exactly (profile.jpg, profile.JPG, profile.png, etc.)
-  const profilePicture = '/profile.JPG'
-  const useProfilePicture = true
+  const profilePicture = "/profile.JPG";
+  const useProfilePicture = true;
 
-  const [imageError, setImageError] = useState(false)
-  const showImage = useProfilePicture && !imageError
+  const [imageError, setImageError] = useState(false);
+  const showImage = useProfilePicture && !imageError;
 
   return (
     <section
@@ -30,7 +30,7 @@ export default function Hero() {
                   />
                 </div>
               ) : (
-                <div className="w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full bg-gradient-to-br from-accent-500 to-accent-700 flex items-center justify-center text-white text-5xl md:text-6xl font-bold shadow-large">
+                <div className="w-36 h-36 md:w-44 md:h-44 mx-auto rounded-full gradient-box flex items-center justify-center text-white text-5xl md:text-6xl font-bold shadow-large">
                   KG
                 </div>
               )}
@@ -52,8 +52,9 @@ export default function Hero() {
           </div>
 
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed px-4">
-            Experienced in agentic RAG systems, A/B tests, and predictive models—translating
-            complex analytics into actionable insights that drive business growth.
+            Experienced in agentic RAG systems, A/B tests, and predictive
+            models—translating complex analytics into actionable insights that
+            drive business growth.
           </p>
 
           <div className="flex justify-center space-x-5 mb-10">
@@ -87,7 +88,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <a
               href="#projects"
-              className="px-8 py-3.5 bg-gradient-to-r from-accent-600 to-accent-700 text-white rounded-lg font-semibold hover:from-accent-700 hover:to-accent-800 transition-all duration-200 shadow-medium hover:shadow-large transform hover:-translate-y-0.5"
+              className="px-8 py-3.5 gradient-btn text-white rounded-lg font-semibold transition-all duration-200 shadow-medium hover:shadow-large transform hover:-translate-y-0.5"
             >
               View Projects
             </a>
@@ -100,12 +101,15 @@ export default function Hero() {
           </div>
 
           <div className="mt-16 animate-bounce">
-            <a href="#about" className="text-gray-400 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400 transition-colors">
+            <a
+              href="#about"
+              className="text-gray-400 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
+            >
               <FaArrowDown className="w-5 h-5 mx-auto" />
             </a>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

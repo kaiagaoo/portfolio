@@ -1,33 +1,30 @@
-import { FaGraduationCap } from 'react-icons/fa'
+import { FaGraduationCap } from "react-icons/fa";
 
 export default function Education() {
   const education = [
     {
-      degree: 'Master of Computational Social Science',
-      institution: 'University of California, Berkeley',
-      location: 'Berkeley, CA',
-      period: 'Jun 2025 – Present',
+      degree: "Master of Computational Social Science",
+      institution: "University of California, Berkeley",
+      location: "Berkeley, CA",
+      period: "Jun 2025 – Present",
       description: [
-        'Relevant Coursework: Advanced Computing, Machine Learning, Advanced Applied Statistics, Data Visualization, Deep Learning for Visual Data (DeCal)',
+        "Relevant Coursework: Advanced Computing, Machine Learning, Advanced Applied Statistics, Data Visualization, Deep Learning for Visual Data (DeCal)",
       ],
     },
     {
-      degree: 'Bachelor of Arts, Communication',
-      institution: 'Zhejiang University (ZJU)',
-      location: 'Hangzhou, China',
-      period: 'Sept 2021 – Jun 2025',
+      degree: "Bachelor of Arts, Communication",
+      institution: "Zhejiang University (ZJU)",
+      location: "Hangzhou, China",
+      period: "Sept 2021 – Jun 2025",
       description: [
-        'GPA: 3.95/4.00',
-        'Relevant Coursework: Big Data Analytics, Advanced Mathematics, Probability and Mathematical Statistics, Python Programming, Introduction to Research Methodology in Social Sciences',
+        "GPA: 3.95/4.00",
+        "Relevant Coursework: Big Data Analytics, Advanced Mathematics, Probability and Mathematical Statistics, Python Programming, Introduction to Research Methodology in Social Sciences",
       ],
     },
-  ]
+  ];
 
   return (
-    <section
-      id="education"
-      className="py-24 bg-white dark:bg-gray-900"
-    >
+    <section id="education" className="py-24 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -44,7 +41,7 @@ export default function Education() {
             >
               <div className="flex items-start mb-6">
                 <div className="flex-shrink-0 mr-4">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-500 to-accent-600 flex items-center justify-center shadow-medium">
+                  <div className="w-14 h-14 rounded-xl gradient-box flex items-center justify-center shadow-medium">
                     <FaGraduationCap className="text-white text-xl" />
                   </div>
                 </div>
@@ -76,5 +73,5 @@ export default function Education() {
         </div>
       </div>
     </section>
-  )
+  );
 }

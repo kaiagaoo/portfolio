@@ -1,31 +1,37 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { FaEnvelope, FaLinkedin, FaGithub, FaMapMarkerAlt, FaPhone } from 'react-icons/fa'
+import { useState } from "react";
+import {
+  FaEnvelope,
+  FaLinkedin,
+  FaGithub,
+  FaMapMarkerAlt,
+  FaPhone,
+} from "react-icons/fa";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  })
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission here
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! I will get back to you soon.')
-    setFormData({ name: '', email: '', message: '' })
-  }
+    console.log("Form submitted:", formData);
+    alert("Thank you for your message! I will get back to you soon.");
+    setFormData({ name: "", email: "", message: "" });
+  };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
-    })
-  }
+    });
+  };
 
   return (
     <section
@@ -39,8 +45,8 @@ export default function Contact() {
           </h2>
           <div className="section-divider mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            I&apos;m always open to discussing data science projects, opportunities,
-            or the latest in ML, RAG, and growth analytics.
+            I&apos;m always open to discussing data science projects,
+            opportunities, or the latest in ML, RAG, and growth analytics.
           </p>
         </div>
 
@@ -51,11 +57,13 @@ export default function Contact() {
             </h3>
             <div className="space-y-6">
               <div className="flex items-center space-x-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-soft hover:shadow-medium transition-shadow border border-gray-100 dark:border-gray-700">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-500 to-accent-600 flex items-center justify-center shadow-medium flex-shrink-0">
+                <div className="w-14 h-14 rounded-xl gradient-box flex items-center justify-center shadow-medium flex-shrink-0">
                   <FaEnvelope className="text-white text-xl" />
                 </div>
                 <div>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm mb-1">Email</p>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm mb-1">
+                    Email
+                  </p>
                   <a
                     href="mailto:qwgao@berkeley.edu"
                     className="text-gray-900 dark:text-white font-medium hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
@@ -66,11 +74,13 @@ export default function Contact() {
               </div>
 
               <div className="flex items-center space-x-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-soft hover:shadow-medium transition-shadow border border-gray-100 dark:border-gray-700">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-500 to-accent-600 flex items-center justify-center shadow-medium flex-shrink-0">
+                <div className="w-14 h-14 rounded-xl gradient-box flex items-center justify-center shadow-medium flex-shrink-0">
                   <FaPhone className="text-white text-xl" />
                 </div>
                 <div>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm mb-1">Phone</p>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm mb-1">
+                    Phone
+                  </p>
                   <a
                     href="tel:+15105426385"
                     className="text-gray-900 dark:text-white font-medium hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
@@ -81,11 +91,13 @@ export default function Contact() {
               </div>
 
               <div className="flex items-center space-x-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-soft hover:shadow-medium transition-shadow border border-gray-100 dark:border-gray-700">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-500 to-accent-600 flex items-center justify-center shadow-medium flex-shrink-0">
+                <div className="w-14 h-14 rounded-xl gradient-box flex items-center justify-center shadow-medium flex-shrink-0">
                   <FaLinkedin className="text-white text-xl" />
                 </div>
                 <div>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm mb-1">LinkedIn</p>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm mb-1">
+                    LinkedIn
+                  </p>
                   <a
                     href="https://www.linkedin.com/in/kaiagao"
                     target="_blank"
@@ -98,11 +110,13 @@ export default function Contact() {
               </div>
 
               <div className="flex items-center space-x-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-soft hover:shadow-medium transition-shadow border border-gray-100 dark:border-gray-700">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-500 to-accent-600 flex items-center justify-center shadow-medium flex-shrink-0">
+                <div className="w-14 h-14 rounded-xl gradient-box flex items-center justify-center shadow-medium flex-shrink-0">
                   <FaGithub className="text-white text-xl" />
                 </div>
                 <div>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm mb-1">GitHub</p>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm mb-1">
+                    GitHub
+                  </p>
                   <a
                     href="https://github.com/kaiagaoo"
                     target="_blank"
@@ -115,11 +129,13 @@ export default function Contact() {
               </div>
 
               <div className="flex items-center space-x-4 p-4 bg-white dark:bg-gray-800 rounded-xl shadow-soft hover:shadow-medium transition-shadow border border-gray-100 dark:border-gray-700">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-accent-500 to-accent-600 flex items-center justify-center shadow-medium flex-shrink-0">
+                <div className="w-14 h-14 rounded-xl gradient-box flex items-center justify-center shadow-medium flex-shrink-0">
                   <FaMapMarkerAlt className="text-white text-xl" />
                 </div>
                 <div>
-                  <p className="text-gray-500 dark:text-gray-400 text-sm mb-1">Location</p>
+                  <p className="text-gray-500 dark:text-gray-400 text-sm mb-1">
+                    Location
+                  </p>
                   <p className="text-gray-900 dark:text-white font-medium">
                     Berkeley, CA
                   </p>
@@ -198,5 +214,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }

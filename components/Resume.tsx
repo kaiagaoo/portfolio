@@ -1,29 +1,26 @@
-'use client'
+"use client";
 
-import { useState } from 'react'
-import { FaDownload, FaEye, FaTimes } from 'react-icons/fa'
+import { useState } from "react";
+import { FaDownload, FaEye, FaTimes } from "react-icons/fa";
 
 export default function Resume() {
-  const [isPreviewOpen, setIsPreviewOpen] = useState(false)
+  const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
   // Resume file path - update this to your actual resume file location
-  const resumePath = '/DS.pdf'
-  const resumeFileName = 'DS.pdf'
+  const resumePath = "/DS.pdf";
+  const resumeFileName = "DS.pdf";
 
   const handleDownload = () => {
-    const link = document.createElement('a')
-    link.href = resumePath
-    link.download = resumeFileName
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+    const link = document.createElement("a");
+    link.href = resumePath;
+    link.download = resumeFileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
-    <section
-      id="resume"
-      className="py-24 bg-white dark:bg-gray-900"
-    >
+    <section id="resume" className="py-24 bg-white dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
@@ -31,14 +28,15 @@ export default function Resume() {
           </h2>
           <div className="section-divider mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            View or download my resume to learn more about my experience and skills
+            View or download my resume to learn more about my experience and
+            skills
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
           <div className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-xl shadow-large p-8 md:p-12 border border-gray-200 dark:border-gray-700">
             <div className="text-center mb-8">
-              <div className="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-accent-500 to-accent-700 flex items-center justify-center text-white text-4xl font-bold shadow-medium">
+              <div className="w-24 h-24 mx-auto mb-6 rounded-full gradient-box flex items-center justify-center text-white text-4xl font-bold shadow-medium">
                 KG
               </div>
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
@@ -52,7 +50,7 @@ export default function Resume() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
                 onClick={() => setIsPreviewOpen(true)}
-                className="px-8 py-3.5 bg-gradient-to-r from-accent-600 to-accent-700 text-white rounded-lg font-semibold hover:from-accent-700 hover:to-accent-800 transition-all duration-200 shadow-medium hover:shadow-large transform hover:-translate-y-0.5 flex items-center justify-center"
+                className="px-8 py-3.5 gradient-btn text-white rounded-lg font-semibold transition-all duration-200 shadow-medium hover:shadow-large transform hover:-translate-y-0.5 flex items-center justify-center"
               >
                 <FaEye className="w-5 h-5 mr-2" />
                 Preview Resume
@@ -91,5 +89,5 @@ export default function Resume() {
         </div>
       )}
     </section>
-  )
+  );
 }

@@ -19,9 +19,9 @@ html {
 body {
   color: rgb(var(--foreground-rgb));
   background: #ffffff;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -117,4 +117,18 @@ section {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   margin: 0 auto;
   border-radius: 2px;
+}
+
+/* Gradient icon box */
+.gradient-box {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+/* Gradient button */
+.gradient-btn {
+  background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(135deg, #6d28d9 0%, #5b21b6 100%);
 }
