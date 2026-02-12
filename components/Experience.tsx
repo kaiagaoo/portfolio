@@ -3,15 +3,14 @@ import { FaBriefcase } from "react-icons/fa";
 export default function Experience() {
   const experiences = [
     {
-      title: "Research Intern",
+      title: "AI Research Intern",
       company: "Wrodium",
       location: "Berkeley, CA",
       period: "Dec 2025 – Present",
       description: [
-        "Experimental Framework Design – Developed a large-scale A/B/C/D experimental framework to quantify the impact of structured data (JSON-LD) and HTML semantic markers on AI agent retrieval (ChatGPT Search, Perplexity), managing a 64-topic pipeline with over 5,000 longitudinal observations.",
-        "Retrieval Benchmarking & RAG Optimization – Evaluated retrieval performance using Recall@k (R@5/10), BM25 lexical ranking, and vector embedding similarity to identify optimal page structures (one-sentence claims, facts tables) that improved content retrievability.",
-        "Statistical Inference & Survival Analysis – Applied Kaplan-Meier estimators and Cox Proportional Hazards models to analyze Time-to-Quote (TTQ) metrics, measuring the statistical significance of freshness signals (IndexNow, <lastmod>) in accelerating AI citation speeds.",
-        "GEO Strategy & Automated Content Pipelines – Engineered a Make automation workflow to generate data-driven technical reports and blog content on Generative Engine Optimization (GEO), translating complex retrieval benchmarks into actionable product strategies for improving Share of Voice (SoV) and content attribution in LLM-based search engines.",
+        "Causal Benchmark Development – Leading development of a research framework to quantify how content freshness reduces LLM hallucination through three causal mechanisms (Knowledge Conflict, Temporal Grounding, Parametric Override)",
+        "Temporal QA Dataset Construction – Built QA dataset using Myers diff for factual change detection; designed factorial experiments with logistic regression decomposition to isolate mechanism effects across 6 domains and multiple LLMs",
+        "Content Pipeline Automation – Engineered a multi-agent workflow using Make.com and LLM APIs to automate technical blog generation on Generative Engine Optimization (GEO), synthesizing retrieval-augmented generation (RAG) research into educational content",
       ],
     },
     {
@@ -26,7 +25,7 @@ export default function Experience() {
     },
     {
       title: "Marketing Analytics Intern",
-      company: "Xiaohongshu",
+      company: "RedNote",
       location: "Shanghai, China",
       period: "Aug 2024 – Jan 2025",
       description: [
@@ -36,7 +35,7 @@ export default function Experience() {
       ],
     },
     {
-      title: "Product Strategy & Analytics Intern, Chauffeur Business Unit",
+      title: "Product & User Analytics Intern",
       company: "Didi",
       location: "Hangzhou, China",
       period: "Mar – Jun 2024",
@@ -46,7 +45,7 @@ export default function Experience() {
       ],
     },
     {
-      title: "Content Strategy & Analytics Intern",
+      title: "Content Operation Intern",
       company: "Huace Film & TV",
       location: "Hangzhou, China",
       period: "Jun – Sept 2023",

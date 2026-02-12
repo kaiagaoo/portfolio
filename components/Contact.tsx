@@ -45,8 +45,7 @@ export default function Contact() {
           </h2>
           <div className="section-divider mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            I&apos;m always open to discussing data science projects,
-            opportunities, or the latest in ML, RAG, and growth analytics.
+            Always happy to chat about data science, career opportunities, or the latest industry trends!
           </p>
         </div>
 

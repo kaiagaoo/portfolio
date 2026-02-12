@@ -10,8 +10,8 @@ export default function Footer() {
               Kaia Gao
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Data Scientist · User behavior, causal inference, growth
-              experimentation · Berkeley, CA
+              Data Scientist · ML/NLP, causal inference, growth
+              analysis · Berkeley, CA
             </p>
           </div>
 

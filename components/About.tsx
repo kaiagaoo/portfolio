@@ -10,31 +10,23 @@ export default function About() {
           </h2>
           <div className="section-divider mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Transforming data into actionable insights
+            From Communication to Computation
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I&apos;m a Data Scientist with a strong foundation in user
-              behavior analysis, causal inference, and growth experimentation.
-              I&apos;m experienced in developing agentic RAG systems, designing
-              A/B tests, and building predictive models using Python and SQL.
+              I started in Communication at Zhejiang University, fascinated by how information shapes behavior. That curiosity led me to data — first analyzing user behavior, then optimizing product experience, and now researching how AI systems process information.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              I&apos;m proficient in building automated workflows and
-              interactive dashboards that translate complex analytics into
-              actionable insights—from retrieval benchmarking and survival
-              analysis to audience segmentation and marketing optimization.
-              I&apos;ve driven measurable impact at companies like Xiaohongshu,
-              Didi, and Wrodium.
+              Today, I'm a Data Science grad student at UC Berkeley, designing experiments to understand why things happen, not just what happened. I'm proficient in causal inference, machine learning, and NLP, building predictive models, running A/B tests, and turning large-scale data into actionable insights.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Currently pursuing a Master&apos;s in Computational Social Science
-              at UC Berkeley, I bring both technical depth and product-minded
-              thinking to every project. Fluent in English and Mandarin.
+              I believe the best data scientists are storytellers who let the data speak.
             </p>
+            
+
           </div>
 
           <div className="grid grid-cols-1 gap-6">
@@ -44,13 +36,11 @@ export default function About() {
                   <FaCode className="text-white text-xl" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  RAG &amp; Retrieval Systems
+                  User Behavior Analysis
                 </h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                Experimental frameworks, Recall@k, BM25, vector embeddings, and
-                GEO strategies to improve AI agent retrieval and content
-                attribution.
+                Audience segmentation, retention modeling, and behavioral insights that drove revenue impact.
               </p>
             </div>
 
@@ -60,13 +50,12 @@ export default function About() {
                   <FaChartLine className="text-white text-xl" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Causal Inference &amp; A/B Testing
+                  Causal Inference &amp; Experimentation
                 </h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                A/B/C/D experiments, survival analysis (Kaplan-Meier, Cox PH),
-                multivariate regression, and statistical inference for product
-                and growth decisions.
+                A/B experiments, factorial design,
+                multivariate regression, and statistical inference to inform decisions.
               </p>
             </div>
 
@@ -76,12 +65,11 @@ export default function About() {
                   <FaDatabase className="text-white text-xl" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Dashboards &amp; Automation
+                  AI &amp; LLM Research
                 </h3>
               </div>
               <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                KPI dashboards, Make workflows, and data pipelines—turning
-                analytics into reporting and product strategy for stakeholders.
+                RAG systems, content freshness benchmarks, and multi-agent automation for GenAI applications.
               </p>
             </div>
           </div>

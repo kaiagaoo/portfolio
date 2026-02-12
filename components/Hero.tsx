@@ -47,14 +47,12 @@ export default function Hero() {
               Data Scientist
             </p>
             <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              User behavior analysis · Causal inference · Growth experimentation
+              ML/NLP · Causal Inference · Growth Analysis
             </p>
           </div>
 
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed px-4">
-            Experienced in agentic RAG systems, A/B tests, and predictive
-            models—translating complex analytics into actionable insights that
-            drive business growth.
+            UC Berkeley grad student designing experimentation frameworks and predictive models. Passionate about turning large-scale data into product decisions that drive user engagement and growth.
           </p>
 
           <div className="flex justify-center space-x-5 mb-10">

@@ -8,6 +8,7 @@ export default function Education() {
       location: "Berkeley, CA",
       period: "Jun 2025 – Present",
       description: [
+        "GPA: 3.87/4.00",
         "Relevant Coursework: Advanced Computing, Machine Learning, Advanced Applied Statistics, Data Visualization, Deep Learning for Visual Data (DeCal)",
       ],
     },

@@ -7,8 +7,8 @@ export default function Resume() {
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
   // Resume file path - update this to your actual resume file location
-  const resumePath = "/DS.pdf";
-  const resumeFileName = "DS.pdf";
+  const resumePath = "/KaiaGao_DA:DS:MLE.pdf";
+  const resumeFileName = "/KaiaGao_DA:DS:MLE.pdf";
 
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -28,8 +28,7 @@ export default function Resume() {
           </h2>
           <div className="section-divider mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            View or download my resume to learn more about my experience and
-            skills
+            View or download my resume for references
           </p>
         </div>
 
