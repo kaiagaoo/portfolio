@@ -1,50 +1,20 @@
 export default function Skills() {
   const skillCategories = [
     {
-      category: 'Programming',
-      skills: [
-        'Python (pandas, numpy, scikit-learn)',
-        'SQL',
-        'R',
-        'HTML, CSS, JavaScript',
-        'Next.js',
-      ],
-      icons: ['🐍', '🗄️', '📊', '💻', '⚡'],
+      category: 'Product Analytics & Experimentation',
+      skills: ['SQL & Python', 'A/B Testing', 'Causal Inference & Regression', 'Segmentation & Product Metrics', 'Tableau & Streamlit'],
     },
     {
-      category: 'Databases & Backend',
-      skills: ['Supabase', 'PostgreSQL', 'MySQL', 'RESTful APIs'],
-      icons: ['🔌', '🐘', '📦', '🔗'],
+      category: 'AI Evaluation & Integrity',
+      skills: ['LLM Evaluation', 'Benchmark & Dataset Design', 'RAG & Content Freshness', 'Factorial Experiments', 'NLP & Text Analysis'],
     },
     {
-      category: 'Statistics',
-      skills: [
-        'A/B Testing',
-        'Causal Inference',
-        'Regression Analysis',
-        'Bayesian Methods',
-      ],
-      icons: ['🧪', '📐', '📈', '🎲'],
+      category: 'Quantitative User Research',
+      skills: ['Survey Design', 'Behavioral Data Analysis', 'Statistical Modeling in R & Python', 'Impact Measurement', 'Research Communication'],
     },
     {
-      category: 'Machine Learning & Frameworks',
-      skills: ['Predictive Modeling', 'PyTorch', 'TensorFlow'],
-      icons: ['🤖', '🔥', '🧠'],
-    },
-    {
-      category: 'Data Processing & Visualization',
-      skills: ['Tableau', 'Matplotlib', 'Seaborn', 'Plotly', 'Streamlit'],
-      icons: ['📊', '🎨', '📈', '📉', '🖥️'],
-    },
-    {
-      category: 'Tools & Workflow',
-      skills: ['Git', 'GitHub', 'Jupyter', 'Google Colab', 'Excel'],
-      icons: ['🔧', '🐙', '📓', '☁️', '📋'],
-    },
-    {
-      category: 'Languages',
-      skills: ['English (Professional)', 'Mandarin (Native)'],
-      icons: ['🌐', '🇨🇳'],
+      category: 'Applied AI Engineering',
+      skills: ['Python & TypeScript', 'React & Next.js', 'Node.js & REST APIs', 'PostgreSQL & Supabase', 'LLM APIs & MCP'],
     },
   ]
 
@@ -56,15 +26,15 @@ export default function Skills() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Skills & Technologies
+            Methods & Tools
           </h2>
           <div className="section-divider mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            A comprehensive toolkit for data science and growth analytics
+            The methods and tools I use across research, analysis, and software projects
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {skillCategories.map((category, index) => (
             <div
               key={index}
@@ -74,12 +44,12 @@ export default function Skills() {
                 {category.category}
               </h3>
               <div className="space-y-3">
-                {category.skills.map((skill, skillIndex) => (
+                {category.skills.map((skill) => (
                   <div
-                    key={skillIndex}
+                    key={skill}
                     className="flex items-center space-x-3"
                   >
-                    <span className="text-2xl">{category.icons[skillIndex]}</span>
+                    <span aria-hidden="true" className="text-accent-500">•</span>
                     <span className="text-gray-700 dark:text-gray-300 font-medium">{skill}</span>
                   </div>
                 ))}

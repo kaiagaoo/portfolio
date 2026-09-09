@@ -20,9 +20,10 @@ export default function Navigation() {
   const navItems = [
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
-    { name: 'Skills', href: '#skills' },
+    { name: 'Publications', href: '#publications' },
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
+    { name: 'Skills', href: '#skills' },
     { name: 'Education', href: '#education' },
     { name: 'Resume', href: '#resume' },
     { name: 'Contact', href: '#contact' },
@@ -48,7 +49,7 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden xl:flex items-center space-x-4">
             <div className="ml-10 flex items-baseline space-x-1">
               {navItems.map((item) => (
                 <a
@@ -74,7 +75,7 @@ export default function Navigation() {
           </div>
 
           {/* Mobile menu button and theme toggle */}
-          <div className="md:hidden flex items-center space-x-2">
+          <div className="xl:hidden flex items-center space-x-2">
             <button
               onClick={toggleTheme}
               className="w-10 h-10 rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-700 dark:text-gray-300"
@@ -102,7 +103,7 @@ export default function Navigation() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white/98 dark:bg-gray-900/98 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 shadow-soft">
+        <div className="xl:hidden bg-white/98 dark:bg-gray-900/98 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 shadow-soft">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <a

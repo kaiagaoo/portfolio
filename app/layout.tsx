@@ -5,9 +5,9 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'Kaia Gao | Data Science Portfolio',
+  title: 'Kaia Gao | People, Data & AI',
   description:
-    'Qianwen (Kaia) Gao – Data Scientist. User behavior, causal inference, growth experimentation. Berkeley.',
+    'Qianwen (Kaia) Gao connects product analytics, AI evaluation, quantitative user research, and applied AI. UC Berkeley Computational Social Science and COLM 2026 research.',
 }
 
 export default function RootLayout({

@@ -10,14 +10,19 @@ export default function Footer() {
               Kaia Gao
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              Data Scientist · ML/NLP, causal inference, growth
-              analysis · Berkeley, CA
+              Understanding people, evaluating AI, and building useful tools.
+              Based in Berkeley, CA.
             </p>
           </div>
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
+              <li>
+                <a href="#publications" className="text-gray-400 hover:text-accent-400 transition-colors">
+                  Publications
+                </a>
+              </li>
               <li>
                 <a
                   href="#about"
@@ -75,7 +80,7 @@ export default function Footer() {
                 <FaLinkedin className="w-5 h-5" />
               </a>
               <a
-                href="mailto:qwgao@berkeley.edu"
+                href="mailto:kaiagao@berkeley.edu"
                 className="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:text-accent-400 hover:bg-gray-700 transition-all duration-200"
                 aria-label="Email"
               >

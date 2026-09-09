@@ -3,17 +3,37 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 export default function Projects() {
   const projects = [
     {
-      title: "Consumer Sentiment & Brand Insights from Amazon Fashion Reviews",
-      subtitle: "Course Project | Oct 2025 – Nov 2025",
+      focus: "Applied AI · LLM Memory",
+      title: "PickMem - A local-first memory-curation layer for LLMs",
+      subtitle: "Personal Project | July 2026",
       description:
-        "Analyzed 2.5M Amazon Fashion reviews to extract customer sentiment and brand perception using NLP techniques (VADER, BERT embeddings, topic modeling). Built regression and clustering models to identify key drivers of satisfaction and differentiate brand positioning. Visualized sentiment and keyword trends across categories through an interactive Streamlit dashboard, providing actionable insights for marketing and product strategy.",
-      technologies: ["Python", "VADER", "BERT", "Streamlit", "Scikit-learn"],
+        "Built an AI-powered memory management application that helps users capture, organize, and retrieve information using semantic search and intelligent categorization. Developed a full-stack architecture with secure authentication, optimized backend APIs and database queries for fast retrieval, and delivered a responsive interface for seamless knowledge management.",
+      technologies: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "MCP"],
       github:
-        "https://github.com/kaiagaoo/Consumer-Sentiment-Brand-Insights-nlp",
+        "https://github.com/kaiagaoo/PickMem",
       demo: undefined,
-      image: "👗",
+      image: "🧠",
     },
     {
+      focus: "AI Evaluation · Experimental Design",
+      title: "FreshRAG: Causal Benchmark for RAG Freshness & Hallucination",
+      subtitle: "Research Project | May 2026",
+      description:
+        "Designed FreshRAG, a large-scale causal benchmark (50K+ QA pairs) to measure how content freshness reduces hallucination in retrieval-augmented generation (RAG) systems. Built a temporal-gradient dataset from multi-year knowledge snapshots and constructed controlled retrieval scenarios to isolate mechanisms including knowledge conflict resolution, temporal grounding, and parametric override. Implemented counterfactual evaluation protocols and mechanism-level effect decomposition, enabling regression-based and experimental estimation of freshness treatment effects across models and domains.",
+      technologies: [
+        "Python",
+        "RAG",
+        "Causal Inference",
+        "Experimental Design",
+        "NLP",
+        "LLM Evaluation",
+      ],
+      github: "https://github.com/kaiagaoo/FRESH-bench",
+      demo: undefined,
+      image: "🧪",
+    },
+    {
+      focus: "Predictive Analytics · Education",
       title: "Predictive Absenteeism & Early-Warning Signal Analysis",
       subtitle: "Capstone Project | ONGB & Wizearly | Feb 2026 – May 2026",
       description:
@@ -31,6 +51,35 @@ export default function Projects() {
       image: "🎓",
     },
     {
+      focus: "Applied AI · Consent",
+      title: "Consentful Civic Lens – Event Organizer",
+      subtitle: "CalHacks Project | Oct 2025",
+      description:
+        "Built a full-stack web app with Next.js, Supabase, and PostgreSQL for event consent management and storytelling. Integrated Claude API and LiveKit for AI-generated highlight summaries, and developed a recommendation system to personalize future event suggestions based on user interests and location.",
+      technologies: [
+        "Next.js",
+        "Supabase",
+        "PostgreSQL",
+        "Claude API",
+        "LiveKit",
+      ],
+      github: "https://github.com/shaaronl/ConsentfulCivicLens",
+      demo: undefined,
+      image: "🎭",
+    },    {
+      focus: "Product Analytics · NLP",
+      title: "Consumer Sentiment & Brand Insights from Amazon Fashion Reviews",
+      subtitle: "Course Project | Oct 2025 – Nov 2025",
+      description:
+        "Analyzed 2.5M Amazon Fashion reviews to extract customer sentiment and brand perception using NLP techniques (VADER, BERT embeddings, topic modeling). Built regression and clustering models to identify key drivers of satisfaction and differentiate brand positioning. Visualized sentiment and keyword trends across categories through an interactive Streamlit dashboard, providing actionable insights for marketing and product strategy.",
+      technologies: ["Python", "VADER", "BERT", "Streamlit", "Scikit-learn"],
+      github:
+        "https://github.com/kaiagaoo/Consumer-Sentiment-Brand-Insights-nlp",
+      demo: undefined,
+      image: "👗",
+    },
+    {
+      focus: "Behavioral Analysis · Econometrics",
       title: "Finfluencers Impact on trading behavior",
       subtitle: "Course Project | Nov 2025 – Dec 2025",
       description:
@@ -47,6 +96,7 @@ export default function Projects() {
       image: "📈",
     },
     {
+      focus: "Data Analysis · Housing",
       title: "California Housing Market Affordability Analysis",
       subtitle: "Course Project | Nov 2025 – Dec 2025",
       description:
@@ -57,39 +107,6 @@ export default function Projects() {
       demo: undefined,
       image: "🏡",
     },
-    {
-      title: "FreshRAG: Causal Benchmark for RAG Freshness & Hallucination",
-      subtitle: "Research Project (In Progress) | 2026",
-      description:
-        "Designed FreshRAG, a large-scale causal benchmark (50K+ QA pairs) to measure how content freshness reduces hallucination in retrieval-augmented generation (RAG) systems. Built a temporal-gradient dataset from multi-year knowledge snapshots and constructed controlled retrieval scenarios to isolate mechanisms including knowledge conflict resolution, temporal grounding, and parametric override. Implemented counterfactual evaluation protocols and mechanism-level effect decomposition, enabling regression-based and experimental estimation of freshness treatment effects across models and domains.",
-      technologies: [
-        "Python",
-        "RAG",
-        "Causal Inference",
-        "Experimental Design",
-        "NLP",
-        "LLM Evaluation",
-      ],
-      github: "https://github.com/kaiagaoo/FRESH-bench",
-      demo: undefined,
-      image: "🧠",
-    },
-    {
-      title: "Consentful Civic Lens – Event Organizer",
-      subtitle: "CalHacks Project | Oct 2025",
-      description:
-        "Built a full-stack web app with Next.js, Supabase, and PostgreSQL for event consent management and storytelling. Integrated Claude API and LiveKit for AI-generated highlight summaries, and developed a recommendation system to personalize future event suggestions based on user interests and location.",
-      technologies: [
-        "Next.js",
-        "Supabase",
-        "PostgreSQL",
-        "Claude API",
-        "LiveKit",
-      ],
-      github: "https://github.com/shaaronl/ConsentfulCivicLens",
-      demo: undefined,
-      image: "🎭",
-    },
   ];
 
   return (
@@ -97,11 +114,11 @@ export default function Projects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-            Featured Projects
+            Selected Projects
           </h2>
           <div className="section-divider mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Data Science in action
+            Evaluating AI, understanding behavior, and building tools people can use
           </p>
         </div>
 
@@ -113,6 +130,7 @@ export default function Projects() {
             >
               <div className="p-8">
                 <div className="text-6xl mb-6 text-center">{project.image}</div>
+                <p className="text-sm font-semibold text-accent-600 dark:text-accent-400 mb-3">{project.focus}</p>
                 <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
                   {project.title}
                 </h3>

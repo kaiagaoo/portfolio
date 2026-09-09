@@ -43,17 +43,21 @@ export default function Hero() {
           </h1>
 
           <div className="mb-6">
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-light mb-2">
-              Data Scientist
+            <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-200 font-medium mb-3">
+              Understanding people. Evaluating AI. Building useful tools.
             </p>
             <p className="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
-              ML/NLP · Causal Inference · Growth Analysis
+              Product Analytics · AI Evaluation · User Research · Applied AI
             </p>
           </div>
 
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed px-4">
-            UC Berkeley grad student designing experimentation frameworks and predictive models. Passionate about turning large-scale data into product decisions that drive user engagement and growth.
+            I study how people use technology, evaluate how AI behaves, and build tools that help people make better decisions. My work connects computational social science at UC Berkeley with product experimentation, research accepted to COLM, and hands-on AI projects.
           </p>
+
+          <a href="#publications" className="inline-flex mb-8 px-4 py-2 rounded-full bg-accent-50 dark:bg-accent-900/30 text-accent-700 dark:text-accent-300 text-sm font-medium hover:underline">
+            CHASE · Accepted to COLM 2026 →
+          </a>
 
           <div className="flex justify-center space-x-5 mb-10">
             <a
@@ -75,7 +79,7 @@ export default function Hero() {
               <FaLinkedin className="w-5 h-5" />
             </a>
             <a
-              href="mailto:qwgao@berkeley.edu"
+              href="mailto:kaiagao@berkeley.edu"
               className="w-12 h-12 rounded-full bg-white dark:bg-gray-800 shadow-soft flex items-center justify-center text-gray-700 dark:text-gray-300 hover:text-accent-600 dark:hover:text-accent-400 hover:shadow-medium transition-all duration-300 hover:-translate-y-1"
               aria-label="Email"
             >
@@ -88,7 +92,7 @@ export default function Hero() {
               href="#projects"
               className="px-8 py-3.5 gradient-btn text-white rounded-lg font-semibold transition-all duration-200 shadow-medium hover:shadow-large transform hover:-translate-y-0.5"
             >
-              View Projects
+              Explore My Work
             </a>
             <a
               href="#contact"
@@ -101,6 +105,7 @@ export default function Hero() {
           <div className="mt-16 animate-bounce">
             <a
               href="#about"
+              aria-label="Read about my background"
               className="text-gray-400 dark:text-gray-500 hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
             >
               <FaArrowDown className="w-5 h-5 mx-auto" />

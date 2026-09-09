@@ -28,7 +28,7 @@ export default function Resume() {
           </h2>
           <div className="section-divider mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            View or download my resume for references
+            Explore my background in research, analytics, and building with AI.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export default function Resume() {
                 Qianwen (Kaia) Gao
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-6">
-                Data Scientist · Berkeley, CA
+                Computational Social Science · Product Analytics & AI · Berkeley, CA
               </p>
             </div>
 

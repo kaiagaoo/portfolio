@@ -45,7 +45,7 @@ export default function Contact() {
           </h2>
           <div className="section-divider mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Always happy to chat about data science, career opportunities, or the latest industry trends!
+            I'm exploring early-career opportunities in product analytics, AI evaluation and integrity, quantitative user research, and applied AI engineering. I'd love to connect with teams building useful, trustworthy technology.
           </p>
         </div>
 
@@ -64,10 +64,10 @@ export default function Contact() {
                     Email
                   </p>
                   <a
-                    href="mailto:qwgao@berkeley.edu"
+                    href="mailto:kaiagao@berkeley.edu"
                     className="text-gray-900 dark:text-white font-medium hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
                   >
-                    qwgao@berkeley.edu
+                    kaiagao@berkeley.edu
                   </a>
                 </div>
               </div>

@@ -6,9 +6,10 @@ export default function Experience() {
       title: "AI Research Intern",
       company: "Wrodium",
       location: "Berkeley, CA",
-      period: "Dec 2025 – Present",
+      period: "Dec 2025 – July 2026",
       description: [
-        "Causal Benchmark Development – Leading development of a research framework to quantify how content freshness reduces LLM hallucination through three causal mechanisms (Knowledge Conflict, Temporal Grounding, Parametric Override)",
+        "COLM 2026 Research – Co-authored CHASE: How Content Ecosystems Are Reshaped When Ranking Is the Only Target, accepted to the Conference on Language Modeling (COLM) 2026. Studied how repeated optimization for LLM rankings reshapes content ecosystems across six domains, finding declining alignment between rankings and independently assessed content quality.",
+        "Causal Benchmark Development – Led development of a research framework to quantify how content freshness affects LLM hallucination through three causal mechanisms (Knowledge Conflict, Temporal Grounding, Parametric Override)",
         "Temporal QA Dataset Construction – Built QA dataset using Myers diff for factual change detection; designed factorial experiments with logistic regression decomposition to isolate mechanism effects across 6 domains and multiple LLMs",
         "Content Pipeline Automation – Engineered a multi-agent workflow using Make.com and LLM APIs to automate technical blog generation on Generative Engine Optimization (GEO), synthesizing retrieval-augmented generation (RAG) research into educational content",
       ],
@@ -78,7 +79,7 @@ export default function Experience() {
           </h2>
           <div className="section-divider mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Research, analytics, and leadership across tech and creative teams
+            Product decisions, research questions, and the people behind them
           </p>
         </div>
 
