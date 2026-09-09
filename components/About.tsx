@@ -47,7 +47,7 @@ export default function About() {
 
         <div className="max-w-3xl mx-auto space-y-5 mb-12">
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-            My background in Communication at Zhejiang University led me to ask how information shapes people's choices. Through product analytics at Didi and RedNote, I began studying those questions with behavioral data and experiments. At UC Berkeley, I study Computational Social Science, bringing together research methods, statistics, and computing.
+            My background in Communication at Zhejiang University led me to ask how information shapes people's choices. Through product analytics at Didi and RedNote, I began studying those questions with behavioral data and experiments. I earned my master's in Computational Social Science at UC Berkeley in May 2026, bringing together research methods, statistics, and computing.
           </p>
           <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
             At Wrodium, I investigated how AI systems shape information quality, co-authoring CHASE, accepted to COLM 2026. Alongside research, I build AI applications and have worked on projects involving student absenteeism and youth wellness. I want my work to make technology more trustworthy, help people access useful information, and support decisions that improve their lives.

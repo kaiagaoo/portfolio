@@ -6,9 +6,8 @@ import { FaDownload, FaEye, FaTimes } from "react-icons/fa";
 export default function Resume() {
   const [isPreviewOpen, setIsPreviewOpen] = useState(false);
 
-  // Resume file path - update this to your actual resume file location
-  const resumePath = "/KaiaGao_DA:DS:MLE.pdf";
-  const resumeFileName = "/KaiaGao_DA:DS:MLE.pdf";
+  const resumePath = "/Kaia_Gao_Resume.pdf";
+  const resumeFileName = "Kaia_Gao_Resume.pdf";
 
   const handleDownload = () => {
     const link = document.createElement("a");
@@ -28,7 +27,7 @@ export default function Resume() {
           </h2>
           <div className="section-divider mb-4"></div>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Explore my background in research, analytics, and building with AI.
+            A one-page overview of my experience in product analytics, AI evaluation, user research, and applied AI.
           </p>
         </div>
 

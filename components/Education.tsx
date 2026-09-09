@@ -6,7 +6,7 @@ export default function Education() {
       degree: "Master of Computational Social Science",
       institution: "University of California, Berkeley",
       location: "Berkeley, CA",
-      period: "Jun 2025 – Present",
+      period: "Jun 2025 – May 2026",
       description: [
         "GPA: 3.87/4.00",
         "Relevant Coursework: Advanced Computing, Machine Learning, Advanced Applied Statistics, Data Visualization, Deep Learning for Visual Data (DeCal)",
