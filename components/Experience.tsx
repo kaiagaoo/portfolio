@@ -9,9 +9,21 @@ export default function Experience() {
       period: "Dec 2025 – July 2026",
       description: [
         "COLM 2026 Research – Co-authored CHASE: How Content Ecosystems Are Reshaped When Ranking Is the Only Target, accepted to the Conference on Language Modeling (COLM) 2026. Studied how repeated optimization for LLM rankings reshapes content ecosystems across six domains, finding declining alignment between rankings and independently assessed content quality.",
-        "Causal Benchmark Development – Led development of a research framework to quantify how content freshness affects LLM hallucination through three causal mechanisms (Knowledge Conflict, Temporal Grounding, Parametric Override)",
-        "Temporal QA Dataset Construction – Built QA dataset using Myers diff for factual change detection; designed factorial experiments with logistic regression decomposition to isolate mechanism effects across 6 domains and multiple LLMs",
-        "Content Pipeline Automation – Engineered a multi-agent workflow using Make.com and LLM APIs to automate technical blog generation on Generative Engine Optimization (GEO), synthesizing retrieval-augmented generation (RAG) research into educational content",
+        "Causal Benchmark Development – Led development of a research framework to quantify how content freshness affects LLM hallucination through three causal mechanisms (Knowledge Conflict, Temporal Grounding, Parametric Override).",
+        "Temporal QA Dataset Construction – Built QA dataset using Myers diff for factual change detection; designed factorial experiments with logistic regression decomposition to isolate mechanism effects across 6 domains and multiple LLMs.",
+        "Content Pipeline Automation – Engineered a multi-agent workflow using Make.com and LLM APIs to automate technical blog generation on Generative Engine Optimization (GEO), synthesizing retrieval-augmented generation (RAG) research into educational content.",
+      ],
+    },
+    {
+      title: "Machine Learning Engineer Intern",
+      company: "Oakland Natives Give Back & Wizearly",
+      location: "Oakland, CA",
+      period: "Feb 2025 – May 2026",
+      description: [
+        "Built a leakage-safe early-warning pipeline over 256,865 student-year records representing 36,695 OUSD students across seven academic years; engineered 63 attendance, academic, demographic, school, and neighborhood features.",
+        "Trained and evaluated eight class-imbalance-aware models using five-fold cross-validation and a temporal holdout; tuned XGBoost achieved 98.9% recall, 0.843 AUC-ROC, and 0.734 PR-AUC.",
+        "Tuned the intervention threshold to retain 94.5% recall while reducing the flagged population from 85.3% to 66.6%, cutting false positives by approximately 22% relative to the default threshold.",
+        "Developed a predictive-feature library, landscape report, and interactive dashboard to support school-district intervention planning.",
       ],
     },
     {

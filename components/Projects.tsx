@@ -46,7 +46,7 @@ export default function Projects() {
         "Tableau",
         "Statistical Modeling",
       ],
-      github: "https://github.com/kaiagaoo/ONGB-chronic-absenteeism",
+      github: "https://github.com/kaiagaoo/ousd-absence-prediction",
       demo: undefined,
       image: "🎓",
     },
