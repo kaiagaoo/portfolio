@@ -28,7 +28,7 @@ export default function Projects() {
         "NLP",
         "LLM Evaluation",
       ],
-      github: "https://github.com/kaiagaoo/FRESH-bench",
+      github: "https://github.com/kaiagaoo/FreshRAG",
       demo: undefined,
       image: "🧪",
     },
