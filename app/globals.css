@@ -31,6 +31,10 @@ h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 38px; line-heigh
 .profile-photo { width: 135px; height: 160px; object-fit: cover; object-position: center 35%; border-radius: 2px; }
 section:not(.intro) { margin-top: 58px; scroll-margin-top: 28px; }
 h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 25px; line-height: 1.3; font-weight: 400; border-bottom: 1px solid #ddd; padding-bottom: 7px; margin-bottom: 18px; }
+.interest { margin-bottom: 20px; }
+.interest:last-child { margin-bottom: 0; }
+.interest h3 { font-size: 15px; line-height: 1.4; margin: 0 0 4px; }
+.interest p { margin-bottom: 0; }
 p { margin-bottom: 13px; }
 .entry { margin-bottom: 23px; }
 .entry:last-child { margin-bottom: 0; }

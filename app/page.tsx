@@ -2,20 +2,14 @@ const projects = [
   {
     title: 'FreshRAG',
     description:
-      'A benchmark for studying how the freshness of retrieved information affects hallucination in language models.',
+      'A benchmark for asking when an agent should rely on stored knowledge versus new evidence. It isolates how fresh retrieval affects language-model answers under knowledge conflict and temporal change.',
     href: 'https://github.com/kaiagaoo/FreshRAG',
   },
   {
     title: 'PickMem',
     description:
-      'A local-first tool for organizing and retrieving the information available to an AI assistant.',
+      'A local-first tool for curating and retrieving an assistant’s memory. It makes the information available to the assistant explicit and manageable.',
     href: 'https://github.com/kaiagaoo/PickMem',
-  },
-  {
-    title: 'Student absence early warning',
-    description:
-      'A predictive modeling project with Oakland Natives Give Back and Wizearly to support school district intervention planning.',
-    href: 'https://github.com/kaiagaoo/ousd-absence-prediction',
   },
 ]
 
@@ -38,7 +32,7 @@ export default function Home() {
             <h1 id="name-heading">Qianwen (Kaia) Gao</h1>
             <p className="intro-meta">Computational Social Science · UC Berkeley</p>
             <p className="intro-text">
-              I study how language models represent and use information, and how their behavior relates to human cognition. My research interests are <strong>AI interpretability</strong>, <strong>cognitive modeling</strong>, and rigorous evaluation of language models.
+              I am interested in <strong>cognitive architectures for human-aware agents</strong>: systems that understand language, remember and reason over experience, and plan actions with people in mind. My current work in language-model evaluation and memory is a foundation for studying commonsense reasoning, social cognition, and embodied collaboration.
             </p>
             <div className="intro-links">
               <a href="mailto:kaiagao@berkeley.edu">Email</a>
@@ -51,13 +45,19 @@ export default function Home() {
         </section>
 
         <section id="research" aria-labelledby="research-heading">
-          <h2 id="research-heading">Research</h2>
-          <p>
-            I am interested in understanding the processes behind intelligent behavior. In AI, that means asking what a model represents and which parts of its computation drive an answer. In cognitive modeling, it means using computational accounts to study how people reason, remember, and learn.
-          </p>
-          <p>
-            My recent work approaches these questions through empirical evaluation: studying how ranking incentives and changing information affect language model systems.
-          </p>
+          <h2 id="research-heading">Research interests</h2>
+          <div className="interest">
+            <h3>Language, memory, and commonsense</h3>
+            <p>How can an agent combine language with remembered experience and up-to-date evidence to reason in an open world? I am particularly interested in when memory helps, when it misleads, and how an agent can revise what it knows.</p>
+          </div>
+          <div className="interest">
+            <h3>Cognitive architectures and planning</h3>
+            <p>How should an autonomous system connect learned representations, explicit knowledge, and planning? I want to study architectures that support interpretable decisions and flexible behavior under uncertainty.</p>
+          </div>
+          <div className="interest">
+            <h3>Social cognition in embodied agents</h3>
+            <p>How can robots infer human goals, preferences, and social norms, communicate uncertainty, and coordinate actions with people? I hope to study these questions through embodied learning and shared autonomy, including how agents respect ethical constraints.</p>
+          </div>
         </section>
 
         <section id="publications" aria-labelledby="publications-heading">
@@ -66,7 +66,7 @@ export default function Home() {
             <p className="entry-title"><a href="https://arxiv.org/abs/2608.30466" target="_blank" rel="noopener noreferrer">CHASE: How Content Ecosystems Are Reshaped When Ranking Is the Only Target</a></p>
             <p><strong>Qianwen Gao</strong>, Zichang Su, Yiwen Hou, Arlen Kumar, Leanid Palkhouski.</p>
             <p><em>Conference on Language Modeling (COLM), 2026.</em></p>
-            <p>Studies how repeated optimization for LLM rankings changes content ecosystems and their relationship to independently assessed quality.</p>
+            <p>Studies how repeated optimization for LLM rankings changes content ecosystems and their relationship to independently assessed quality. It motivates my interest in agents that reason about incentives and the broader consequences of their behavior.</p>
             <p><a href="https://arxiv.org/abs/2608.30466" target="_blank" rel="noopener noreferrer">Paper ↗</a></p>
           </div>
         </section>
@@ -84,7 +84,7 @@ export default function Home() {
         <section id="about" aria-labelledby="about-heading">
           <h2 id="about-heading">About</h2>
           <p>
-            I earned a Master of Computational Social Science from the University of California, Berkeley, and a B.A. in Communication from Zhejiang University. At Wrodium, I worked on LLM evaluation, information ecosystems, and retrieval. My background also includes applied statistical modeling and user research.
+            I earned a Master of Computational Social Science from the University of California, Berkeley, and a B.A. in Communication from Zhejiang University. At Wrodium, I worked on LLM evaluation, information ecosystems, and retrieval. My background in computational social science also informs my interest in how intelligent systems interpret and respond to people.
           </p>
         </section>
       </main>
