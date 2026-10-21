@@ -60,10 +60,9 @@ h2 { font-family: Georgia, 'Times New Roman', serif; font-size: 25px; line-heigh
 .interest h3 { font-size: 15px; line-height: 1.4; margin: 0 0 4px; }
 .interest p { margin-bottom: 0; }
 .news-year { color: var(--muted); font-weight: 700; margin-right: 10px; }
-.publication { display: grid; grid-template-columns: minmax(215px, 42%) minmax(0, 1fr); gap: 22px; align-items: start; }
-.publication-figure { margin: 0; }
-.publication-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--border); }
-.publication-figure figcaption { margin-top: 5px; color: var(--soft); font-size: 11px; }
+.publication { display: grid; grid-template-columns: minmax(0, 205px) minmax(0, 1fr); gap: 22px; align-items: start; }
+.publication-figure { margin: 0; max-width: 205px; }
+.publication-figure img { display: block; width: 100%; height: auto; border: 2px solid var(--muted); }
 p { margin-bottom: 13px; }
 .entry { margin-bottom: 23px; }
 .entry:last-child { margin-bottom: 0; }

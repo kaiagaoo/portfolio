@@ -88,7 +88,6 @@ export default function Home() {
               <a href="/chase-figure.png" target="_blank" rel="noopener noreferrer" aria-label="Open the CHASE framework figure at full size">
                 <img src="/chase-figure.png" width="2040" height="1116" alt="CHASE framework: rank, discriminate, rewrite, and evaluate" />
               </a>
-              <figcaption>Figure 1 from CHASE</figcaption>
             </figure>
             <div className="entry">
               <p className="entry-title"><a href="https://arxiv.org/abs/2608.30466" target="_blank" rel="noopener noreferrer">CHASE: How Content Ecosystems Are Reshaped When Ranking Is the Only Target</a></p>
