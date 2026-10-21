@@ -13,6 +13,18 @@ const projects = [
       'A local-first tool for curating and retrieving an assistant’s memory, making the information available to it easier for people to inspect and manage.',
     href: 'https://github.com/kaiagaoo/PickMem',
   },
+  {
+    title: 'Chronic Absenteeism Prediction',
+    description:
+      'Evaluated early-warning models for student absenteeism and examined precision–recall tradeoffs to help school leaders decide when to intervene.',
+    href: 'https://github.com/kaiagaoo/ousd-absence-prediction',
+  },
+  {
+    title: 'Finfluencers and Retail Trading',
+    description:
+      'Used panel regression to study how social-media sentiment, attention, and market volatility relate to trading volume across major technology stocks.',
+    href: 'https://github.com/rgomez-ucb/finfluencers-retail-trading-stats',
+  },
 ]
 
 export default function Home() {
