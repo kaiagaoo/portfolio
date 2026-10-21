@@ -51,6 +51,7 @@ h1, h2, p { margin-top: 0; }
 h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 38px; line-height: 1.2; font-weight: 400; margin-bottom: 6px; }
 .intro-meta { color: var(--muted); margin-bottom: 21px; }
 .intro-text { max-width: 610px; margin-bottom: 16px; }
+.opportunity-note { font-weight: 600; margin-bottom: 16px; }
 .intro-links { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; }
 .profile-photo { width: 135px; height: 160px; object-fit: cover; object-position: center 35%; border-radius: 2px; }
 section:not(.intro) { margin-top: 58px; scroll-margin-top: 28px; }
