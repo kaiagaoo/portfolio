@@ -40,8 +40,11 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--link); outline-
 .site-name { color: var(--text); font-weight: 700; font-size: 16px; white-space: nowrap; }
 .site-nav nav { display: flex; flex-wrap: wrap; gap: 18px; }
 .site-nav nav a { color: var(--nav); font-size: 13px; }
-.theme-toggle { border: 0; padding: 0; background: transparent; color: var(--nav); font: inherit; font-size: 13px; line-height: inherit; cursor: pointer; }
-.theme-toggle:hover { text-decoration: underline; }
+.theme-toggle { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; margin-left: auto; border: 0; padding: 0; background: transparent; color: var(--nav); cursor: pointer; }
+.theme-toggle:hover { color: var(--link); }
+.theme-toggle svg { display: block; width: 18px; height: 18px; }
+.theme-toggle .sun-icon, :root[data-theme='dark'] .theme-toggle .moon-icon { display: none; }
+:root[data-theme='dark'] .theme-toggle .sun-icon { display: block; }
 main { padding: 42px 0 58px; }
 .intro { display: grid; grid-template-columns: minmax(0, 1fr) 135px; gap: 36px; align-items: start; }
 h1, h2, p { margin-top: 0; }
