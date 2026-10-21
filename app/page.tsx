@@ -14,6 +14,12 @@ const projects = [
     href: 'https://github.com/kaiagaoo/PickMem',
   },
   {
+    title: 'Amazon Fashion Review Sentiment Analysis',
+    description:
+      'Used NLP topic modeling and aspect-based sentiment analysis on about 831,000 reviews to identify recurring themes and product attributes linked to customer ratings.',
+    href: 'https://github.com/kaiagaoo/Consumer-Sentiment-Brand-Insights-nlp',
+  },
+  {
     title: 'Chronic Absenteeism Prediction',
     description:
       'Evaluated early-warning models for student absenteeism and examined precision–recall tradeoffs to help school leaders decide when to intervene.',
