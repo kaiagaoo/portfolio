@@ -1,3 +1,5 @@
+import ThemeToggle from '../components/ThemeToggle'
+
 const projects = [
   {
     title: 'FreshRAG',
@@ -24,6 +26,7 @@ export default function Home() {
           <a href="#publications">Publications</a>
           <a href="#projects">Projects</a>
           <a href="#bio">Bio</a>
+          <ThemeToggle />
         </nav>
       </header>
 

@@ -9,7 +9,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `
+          try {
+            var savedTheme = localStorage.getItem('portfolio-theme');
+            document.documentElement.dataset.theme = savedTheme === 'light' || savedTheme === 'dark'
+              ? savedTheme
+              : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          } catch (error) {
+            document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+          }
+        ` }} />
+      </head>
       <body>{children}</body>
     </html>
   )
