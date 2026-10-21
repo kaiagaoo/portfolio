@@ -2,13 +2,13 @@ const projects = [
   {
     title: 'FreshRAG',
     description:
-      'A benchmark for asking when an agent should rely on stored knowledge versus new evidence. It isolates how fresh retrieval affects language-model answers under knowledge conflict and temporal change.',
+      'A benchmark that uses controlled comparisons to examine when fresh evidence changes a language model’s answer. It helps separate the effects of stored knowledge and retrieved information.',
     href: 'https://github.com/kaiagaoo/FreshRAG',
   },
   {
     title: 'PickMem',
     description:
-      'A local-first tool for curating and retrieving an assistant’s memory. It makes the information available to the assistant explicit and manageable.',
+      'A local-first tool for curating and retrieving an assistant’s memory. It makes the context available to the assistant more visible and manageable for its user.',
     href: 'https://github.com/kaiagaoo/PickMem',
   },
 ]
@@ -32,7 +32,7 @@ export default function Home() {
             <h1 id="name-heading">Qianwen (Kaia) Gao</h1>
             <p className="intro-meta">Computational Social Science · UC Berkeley</p>
             <p className="intro-text">
-              I am interested in <strong>cognitive architectures for human-aware agents</strong>: systems that understand language, remember and reason over experience, and plan actions with people in mind. My current work in language-model evaluation and memory is a foundation for studying commonsense reasoning, social cognition, and embodied collaboration.
+              I want to build <strong>AI agents that people can understand, guide, and correct</strong>. My interests center on cognitive architectures that connect language, memory, commonsense reasoning, and planning, with interpretable decisions and meaningful human control. My work in language-model evaluation and memory is a starting point for making AI more useful and accountable to people.
             </p>
             <div className="intro-links">
               <a href="mailto:kaiagao@berkeley.edu">Email</a>
@@ -47,12 +47,16 @@ export default function Home() {
         <section id="research" aria-labelledby="research-heading">
           <h2 id="research-heading">Research interests</h2>
           <div className="interest">
+            <h3>Interpretability and control</h3>
+            <p>What does an agent represent, and why does it choose a particular answer or action? I want explanations that reflect the mechanisms actually driving behavior, and ways for people to inspect an agent’s assumptions, redirect it, and correct mistakes.</p>
+          </div>
+          <div className="interest">
             <h3>Language, memory, and commonsense</h3>
             <p>How can an agent combine language with remembered experience and up-to-date evidence to reason in an open world? I am particularly interested in when memory helps, when it misleads, and how an agent can revise what it knows.</p>
           </div>
           <div className="interest">
             <h3>Cognitive architectures and planning</h3>
-            <p>How should an autonomous system connect learned representations, explicit knowledge, and planning? I want to study architectures that support interpretable decisions and flexible behavior under uncertainty.</p>
+            <p>How should an autonomous system connect learned representations, explicit knowledge, and planning? I want to study architectures whose decisions can be traced and whose plans can be revised as the world or a person’s goals change.</p>
           </div>
           <div className="interest">
             <h3>Social cognition in embodied agents</h3>
@@ -66,7 +70,7 @@ export default function Home() {
             <p className="entry-title"><a href="https://arxiv.org/abs/2608.30466" target="_blank" rel="noopener noreferrer">CHASE: How Content Ecosystems Are Reshaped When Ranking Is the Only Target</a></p>
             <p><strong>Qianwen Gao</strong>, Zichang Su, Yiwen Hou, Arlen Kumar, Leanid Palkhouski.</p>
             <p><em>Conference on Language Modeling (COLM), 2026.</em></p>
-            <p>Studies how repeated optimization for LLM rankings changes content ecosystems and their relationship to independently assessed quality. It motivates my interest in agents that reason about incentives and the broader consequences of their behavior.</p>
+            <p>Studies how repeated optimization for LLM rankings changes content ecosystems and their relationship to independently assessed quality. It motivates my interest in making system objectives visible and examining their effects on people.</p>
             <p><a href="https://arxiv.org/abs/2608.30466" target="_blank" rel="noopener noreferrer">Paper ↗</a></p>
           </div>
         </section>
