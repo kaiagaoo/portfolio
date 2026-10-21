@@ -2,13 +2,13 @@ const projects = [
   {
     title: 'FreshRAG',
     description:
-      'A controlled benchmark for studying when new evidence changes a language model’s answer as facts change, separating the effects of internal knowledge and retrieved information.',
+      'A controlled evaluation of how language models use new evidence when facts change, separating the influence of stored knowledge from retrieved information.',
     href: 'https://github.com/kaiagaoo/FreshRAG',
   },
   {
     title: 'PickMem',
     description:
-      'A local-first tool for curating an assistant’s memory, giving people a clearer way to manage the information the assistant can use.',
+      'A local-first tool for curating and retrieving an assistant’s memory, making the information available to it easier for people to inspect and manage.',
     href: 'https://github.com/kaiagaoo/PickMem',
   },
 ]
@@ -32,7 +32,7 @@ export default function Home() {
             <h1 id="name-heading">Qianwen (Kaia) Gao</h1>
             <p className="intro-meta">Computational Social Science · UC Berkeley</p>
             <p className="intro-text">
-              I want to build <strong>AI agents and robots whose reasoning people can understand and whose behavior they can guide and correct</strong>. My research interests connect interpretability with cognitive architectures for language, memory, commonsense reasoning, and planning. I am especially drawn to physical AI, where agents must understand human intentions and social context before acting in the world. Across digital and embodied systems, I want intelligence that serves human goals and remains accountable to the people it affects.
+              My goal is to develop AI agents whose decisions are legible to people and whose behavior remains open to human guidance and correction. Building on my work in behavioral evaluation, I am interested in interpretable cognitive architectures that bring together language understanding, memory, commonsense reasoning, and goal-directed planning. I am especially drawn to embodied intelligence, where perception and action can ground and extend what agents learn from text and images. Through interaction with the physical world, agents can build richer models of causality, affordances, human intent, and social context—while remaining understandable, steerable, and safe.
             </p>
             <div className="intro-links">
               <a href="mailto:kaiagao@berkeley.edu">Email</a>
@@ -47,16 +47,16 @@ export default function Home() {
         <section id="research" aria-labelledby="research-heading">
           <h2 id="research-heading">Research interests</h2>
           <div className="interest">
-            <h3>Interpretability and control</h3>
-            <p>Why does an agent make a particular inference or take an action, and which representations or assumptions drive it? I want explanations that reflect the underlying process, along with ways to correct a memory, revise a plan, or redirect behavior when it diverges from human intent.</p>
+            <h3>Legible and correctable decisions</h3>
+            <p>Which representations, memories, or goals actually drive an agent’s decisions? I am interested in explanations that reflect those causes and in ways for people to diagnose errors, revise assumptions, and redirect behavior.</p>
           </div>
           <div className="interest">
-            <h3>Cognitive architectures for reasoning</h3>
-            <p>How can an agent combine language, memory, and commonsense knowledge to reason across time and plan under uncertainty? I am interested in cognitive models and architectures that make these processes clear enough to study, evaluate, and improve.</p>
+            <h3>Language, memory, and planning</h3>
+            <p>How can an agent connect instructions and experience with commonsense knowledge to reason over time? I want to study cognitive architectures that make it possible to examine how agents update what they know and revise their plans.</p>
           </div>
           <div className="interest">
-            <h3>Human-aware physical AI</h3>
-            <p>When decisions become physical actions, an agent must account for the people around it. I want to study how robots infer human goals and preferences, reason about social norms, explain their actions, and coordinate with people through shared autonomy.</p>
+            <h3>Embodied and social intelligence</h3>
+            <p>How can perception and action help agents learn causal structure, what objects afford, and what people intend? I am interested in robots that use this grounding to collaborate with people while making their actions understandable and open to correction.</p>
           </div>
         </section>
 
@@ -66,7 +66,7 @@ export default function Home() {
             <p className="entry-title"><a href="https://arxiv.org/abs/2608.30466" target="_blank" rel="noopener noreferrer">CHASE: How Content Ecosystems Are Reshaped When Ranking Is the Only Target</a></p>
             <p><strong>Qianwen Gao</strong>, Zichang Su, Yiwen Hou, Arlen Kumar, Leanid Palkhouski.</p>
             <p><em>Conference on Language Modeling (COLM), 2026.</em></p>
-            <p>Studies how repeated optimization for LLM rankings changes content ecosystems and how rankings can drift from independently assessed quality.</p>
+            <p>A simulation-based evaluation of how repeated optimization for LLM rankings changes content ecosystems and can cause rankings to drift from independently assessed quality.</p>
             <p><a href="https://arxiv.org/abs/2608.30466" target="_blank" rel="noopener noreferrer">Paper ↗</a></p>
           </div>
         </section>
@@ -84,7 +84,7 @@ export default function Home() {
         <section id="about" aria-labelledby="about-heading">
           <h2 id="about-heading">About</h2>
           <p>
-            I earned a Master of Computational Social Science from the University of California, Berkeley, and a B.A. in Communication from Zhejiang University. At Wrodium, I worked on LLM evaluation, ranking, and retrieval. This empirical background is the foundation for my interest in interpretable reasoning and human-aware agents.
+            I earned a Master of Computational Social Science from the University of California, Berkeley, and a B.A. in Communication from Zhejiang University. At Wrodium, I studied model behavior in changing ranking and retrieval environments. This empirical work grounds my interest in how agents use evidence, pursue goals, and respond to human guidance.
           </p>
         </section>
       </main>
