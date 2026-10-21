@@ -32,7 +32,7 @@ export default function Home() {
             <h1 id="name-heading">Qianwen (Kaia) Gao</h1>
             <p className="intro-meta">Computational Social Science · UC Berkeley</p>
             <p className="intro-text">
-              I want to build <strong>AI agents that people can understand, guide, and correct</strong>. My interests center on cognitive architectures that connect language, memory, commonsense reasoning, and planning, with interpretable decisions and meaningful human control. My work in language-model evaluation and memory is a starting point for making AI more useful and accountable to people.
+              I want to build <strong>AI and robotic agents that people can understand, guide, and correct</strong>. My interests center on cognitive architectures that connect language, memory, commonsense reasoning, and planning. The same questions matter in physical AI: what information does a robot use, why does it act, and how can a person redirect it? My work in language-model evaluation and memory is a starting point for this goal.
             </p>
             <div className="intro-links">
               <a href="mailto:kaiagao@berkeley.edu">Email</a>
@@ -48,7 +48,7 @@ export default function Home() {
           <h2 id="research-heading">Research interests</h2>
           <div className="interest">
             <h3>Interpretability and control</h3>
-            <p>What does an agent represent, and why does it choose a particular answer or action? I want explanations that reflect the mechanisms actually driving behavior, and ways for people to inspect an agent’s assumptions, redirect it, and correct mistakes.</p>
+            <p>What does an AI system or robot represent, and why does it choose a particular answer or action? I want explanations that reflect the mechanisms actually driving behavior, and ways for people to inspect assumptions, redirect the agent, and correct mistakes.</p>
           </div>
           <div className="interest">
             <h3>Language, memory, and commonsense</h3>
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
           <div className="interest">
             <h3>Social cognition in embodied agents</h3>
-            <p>How can robots infer human goals, preferences, and social norms, communicate uncertainty, and coordinate actions with people? I hope to study these questions through embodied learning and shared autonomy, including how agents respect ethical constraints.</p>
+            <p>How can robots infer human goals, preferences, and social norms, communicate uncertainty, and coordinate actions with people? When an AI system acts in the physical world, people need to understand and redirect its behavior. I hope to study this through embodied learning and shared autonomy.</p>
           </div>
         </section>
 
