@@ -1,6 +1,6 @@
 # Qianwen (Kaia) Gao — research portfolio
 
-A minimal academic portfolio built with Next.js 14 and TypeScript. The site presents Qianwen Gao's interests in interpretable and controllable AI and robotics, cognitive architectures, language, memory, and human-aware physical AI alongside her publication and selected projects.
+A minimal academic portfolio built with Next.js 14 and TypeScript. The site connects Qianwen Gao's work in language-model evaluation and memory with her research interests in interpretability, cognitive architectures, and human-aware robotics.
 
 ## Run locally
 
