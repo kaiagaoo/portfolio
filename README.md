@@ -1,6 +1,6 @@
 # Qianwen (Kaia) Gao — research portfolio
 
-An academic style portfolio built with Next.js 14 and TypeScript. The site presents Qianwen Gao's research interests in AI interpretability and cognitive modeling alongside her publication, selected projects, and background.
+A minimal academic portfolio built with Next.js 14 and TypeScript. The site presents Qianwen Gao's research interests in AI interpretability and cognitive modeling alongside her publication, selected projects, and background.
 
 ## Run locally
 
@@ -22,7 +22,7 @@ Next.js exports the static site to `out/` (configured in `next.config.js`).
 ## Update content
 
 - Edit the research statement, publication, projects, and background in `app/page.tsx`.
-- Edit the visual design and responsive rules in `app/globals.css`.
+- Edit the simple layout and responsive rules in `app/globals.css`.
 - Replace `public/profile.JPG` with a new portrait if needed.
 - Replace `public/Kaia_Gao_Resume.pdf` when the résumé changes.
 - Update page title and description in `app/layout.tsx`.
