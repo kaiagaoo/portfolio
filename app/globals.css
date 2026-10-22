@@ -11,6 +11,7 @@
   --border: #ddd;
   --link: #1e5b81;
   --nav: #555;
+  --opportunity-bg: #f0f5f8;
 }
 :root[data-theme='dark'] {
   color-scheme: dark;
@@ -21,6 +22,7 @@
   --border: #3b4449;
   --link: #8dc9ee;
   --nav: #c6c9c8;
+  --opportunity-bg: #223039;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -51,7 +53,7 @@ h1, h2, p { margin-top: 0; }
 h1 { font-family: Georgia, 'Times New Roman', serif; font-size: 38px; line-height: 1.2; font-weight: 400; margin-bottom: 6px; }
 .intro-meta { color: var(--muted); margin-bottom: 21px; }
 .intro-text { max-width: 610px; margin-bottom: 16px; }
-.opportunity-note { font-weight: 600; margin-bottom: 16px; }
+.opportunity-note { margin-bottom: 16px; padding: 8px 12px; border-left: 3px solid var(--link); background: var(--opportunity-bg); font-weight: 600; }
 .intro-links { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; }
 .profile-photo { width: 135px; height: 160px; object-fit: cover; object-position: center 35%; border-radius: 2px; }
 section:not(.intro) { margin-top: 58px; scroll-margin-top: 28px; }
