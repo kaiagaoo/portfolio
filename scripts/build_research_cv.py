@@ -54,7 +54,7 @@ date_style = ParagraphStyle("Date", parent=entry_style, alignment=TA_RIGHT)
 bullet_style = ParagraphStyle(
     "Bullet", parent=body, leftIndent=18, firstLineIndent=0,
     bulletIndent=4, bulletFontName="CVTimes", bulletFontSize=10.9,
-    spaceAfter=4,
+    spaceAfter=3,
 )
 
 
@@ -66,8 +66,8 @@ def section(title):
     row = Table(
         [[paragraph(title.upper(), section_style)]],
         colWidths=[CONTENT_WIDTH],
-        spaceBefore=10,
-        spaceAfter=6,
+        spaceBefore=8,
+        spaceAfter=4,
     )
     row.setStyle(TableStyle([
         ("LEFTPADDING", (0, 0), (-1, -1), 0),
@@ -97,7 +97,7 @@ def heading(left, right):
 def entry(left, right, bullets):
     items = [heading(left, right)]
     items.extend(Paragraph(text, bullet_style, bulletText="\u2022") for text in bullets)
-    items.append(Spacer(1, 3))
+    items.append(Spacer(1, 2))
     return KeepTogether(items)
 
 
@@ -169,6 +169,15 @@ story = [
         " | Team course project", "2025", [
             "Analyzed approximately 831,000 reviews with topic modeling and aspect-based sentiment "
             "analysis to identify themes and product attributes associated with ratings.",
+        ],
+    ),
+    entry(
+        '<b><link href="https://github.com/rgomez-ucb/finfluencers-retail-trading-stats" '
+        'color="#1e5b81">Finfluencers and Retail Trading</link></b>'
+        " | Statistics course project", "2025", [
+            "Analyzed five technology stocks (2020-2022) with panel OLS, entity fixed effects, "
+            "and clustered standard errors; assessed how social-media sentiment, attention, "
+            "and market volatility relate to trading volume.",
         ],
     ),
     section("Methods and tools"),
