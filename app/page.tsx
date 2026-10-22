@@ -61,6 +61,7 @@ export default function Home() {
               <a href="mailto:kaiagao@berkeley.edu">Email</a>
               <a href="https://github.com/kaiagaoo" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a href="https://www.linkedin.com/in/kaiagao" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="/Qianwen_Gao_Research_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
             </div>
           </div>
           <img className="profile-photo" src="/profile.JPG" alt="Qianwen (Kaia) Gao" />
