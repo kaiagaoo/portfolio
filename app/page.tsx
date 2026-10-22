@@ -52,7 +52,7 @@ export default function Home() {
         <section className="intro" aria-labelledby="name-heading">
           <div>
             <h1 id="name-heading">Qianwen (Kaia) Gao</h1>
-            <p className="intro-meta">Computational Social Science · UC Berkeley</p>
+            <p className="intro-meta">Based in Greater Boston · Master of Computational Social Science, UC Berkeley</p>
             <p className="intro-text">
               I study how AI agents can ground language and reasoning through perception and action—and how we can determine whether their apparent reasoning faithfully reflects what drives their behavior. Building on my work in behavioral evaluation, I am interested in interpretable embodied agents that integrate language, memory, commonsense reasoning, and planning while learning from interaction with the physical world. My goal is to develop agents whose decision processes can be tested through intervention, whose explanations are faithful, and whose actions remain open to human guidance and correction.
             </p>
