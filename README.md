@@ -25,7 +25,7 @@ Next.js exports the static site to `out/` (configured in `next.config.js`).
 - Edit the simple layout and responsive rules in `app/globals.css`.
 - Replace `public/profile.JPG` with a new portrait if needed.
 - `public/chase-figure.png` is Figure 1 from the [CHASE paper](https://arxiv.org/html/2608.30466), used beside the publication entry.
-- Run `scripts/build_research_cv.py` with Python, `reportlab`, and `pypdf` to rebuild the research CV linked from the homepage. The script writes the final PDF to `output/pdf/` and copies it to `public/`.
+- Run `scripts/build_research_cv.py` with Python, `reportlab`, and `pypdf` to rebuild the research CV. The script writes the final PDF to `output/pdf/` and copies it to `public/`.
 - Update page title and description in `app/layout.tsx`.
 
 The homepage uses ordinary links for email and research profiles. There is no contact form or backend service to configure.
