@@ -99,8 +99,11 @@ story = [
     ),
     section("Research interests"),
     paragraph(
-        "Interpretable AI agents, faithful explanations, language and memory, grounded reasoning, "
-        "and human-guided embodied systems.",
+        "I study how AI agents ground language and reasoning through perception and action, "
+        "and whether their apparent reasoning faithfully reflects what drives their behavior. "
+        "Building on behavioral evaluation, I seek to develop interpretable embodied agents "
+        "that integrate language, memory, commonsense reasoning, and planning, with decisions "
+        "testable through intervention and actions open to human guidance and correction.",
         small,
     ),
     section("Education"),
@@ -123,15 +126,21 @@ story = [
     ),
     section("Research and evaluation experience"),
     entry("<b>Wrodium</b> | AI Research Intern", "Dec 2025 - Jul 2026", [
-        "Co-authored CHASE, a controlled simulation of how repeated optimization for LLM ranking "
-        "signals changes content quality and ranking alignment across six domains.",
-        "Led FreshRAG benchmark development: constructed temporal QA data from factual changes "
-        "and designed controlled experiments on knowledge conflict, temporal grounding, and "
+        "Co-authored CHASE, a simulation-based evaluation of how optimizing content for LLM "
+        "rankings reshapes content ecosystems across six domains and weakens alignment with "
+        "independently assessed quality.",
+        "Led FreshRAG evaluation design: built temporal QA data from factual changes and "
+        "designed controlled comparisons of knowledge conflict, temporal grounding, and "
         "parametric override.",
     ]),
-    entry("<b>APPA Health</b> | Strategy and Data Analyst Intern", "Sep - Dec 2025", [
-        "Developed a measurement framework for youth wellness programs and analyzed pre/post "
-        "survey data to assess engagement and inform program changes.",
+    entry("<b>Oakland Natives Give Back (ONGB) &amp; Wizearly</b> | ML Capstone", "Feb - May 2026", [
+        "Built a leakage-safe early-warning pipeline using 256,865 student-year records from "
+        "36,695 students across seven years; engineered 63 attendance, academic, demographic, "
+        "school, and neighborhood features.",
+        "Compared eight models with class imbalance-aware training, cross-validation, and a "
+        "temporal holdout; tuned XGBoost reached 0.734 PR-AUC and 98.9% recall.",
+        "Examined intervention thresholds, retaining 94.5% recall while reducing false "
+        "positives by about 22% versus the default threshold to support school leaders' decisions.",
     ]),
     section("Selected projects"),
     entry(
@@ -149,19 +158,12 @@ story = [
             "analysis to identify themes and product attributes associated with ratings.",
         ],
     ),
-    entry(
-        '<b><link href="https://github.com/kaiagaoo/ousd-absence-prediction" '
-        'color="#1e5b81">Chronic Absenteeism Prediction</link></b>'
-        " | ONGB and Wizearly capstone", "2026", [
-            "Evaluated early-warning models on Oakland student attendance data and examined "
-            "precision-recall tradeoffs to support decisions about intervention thresholds.",
-        ],
-    ),
     section("Methods and tools"),
     paragraph(
         "<b>Methods:</b> LLM evaluation, NLP, retrieval-augmented generation, experimental design, "
         "causal inference, regression.<br/>"
-        "<b>Programming and tools:</b> Python, SQL, R, TypeScript; pandas, scikit-learn, PyTorch, Git.",
+        "<b>Programming and tools:</b> Python, SQL, R, TypeScript; pandas, scikit-learn, PyTorch, Git.<br/>"
+        "<b>Robotics tools (introductory):</b> MuJoCo, robosuite, robomimic.",
         small,
     ),
 ]
@@ -171,7 +173,7 @@ doc = SimpleDocTemplate(
     leftMargin=MARGIN_X, rightMargin=MARGIN_X, topMargin=34, bottomMargin=35,
     title="Qianwen (Kaia) Gao - Research CV",
     author="Qianwen (Kaia) Gao",
-    subject="Research assistant CV: interpretable AI, language, memory, and AI evaluation",
+    subject="Research assistant CV: interpretable embodied AI and behavioral evaluation",
 )
 doc.build(story)
 reader = PdfReader(OUTPUT)
