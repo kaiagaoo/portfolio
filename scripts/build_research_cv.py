@@ -47,14 +47,14 @@ contact_style = ParagraphStyle(
 )
 section_style = ParagraphStyle(
     "Section", parent=body, fontName="CVTimes-Bold", fontSize=11.1,
-    leading=14, spaceBefore=10, spaceAfter=5,
-    borderBottomWidth=0.65, borderBottomColor=INK, borderPadding=2,
+    leading=14, spaceAfter=0,
 )
 entry_style = ParagraphStyle("Entry", parent=body, fontSize=10.6, leading=13.2, spaceAfter=0)
 date_style = ParagraphStyle("Date", parent=entry_style, alignment=TA_RIGHT)
 bullet_style = ParagraphStyle(
-    "Bullet", parent=body, leftIndent=13, firstLineIndent=0,
-    bulletIndent=0, spaceAfter=4,
+    "Bullet", parent=body, leftIndent=18, firstLineIndent=0,
+    bulletIndent=4, bulletFontName="CVTimes", bulletFontSize=10.9,
+    spaceAfter=4,
 )
 
 
@@ -63,7 +63,20 @@ def paragraph(text, style=body):
 
 
 def section(title):
-    return paragraph(title.upper(), section_style)
+    row = Table(
+        [[paragraph(title.upper(), section_style)]],
+        colWidths=[CONTENT_WIDTH],
+        spaceBefore=10,
+        spaceAfter=6,
+    )
+    row.setStyle(TableStyle([
+        ("LEFTPADDING", (0, 0), (-1, -1), 0),
+        ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+        ("TOPPADDING", (0, 0), (-1, -1), 0),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 4),
+        ("LINEBELOW", (0, 0), (-1, -1), 0.55, INK),
+    ]))
+    return row
 
 
 def heading(left, right):
@@ -83,7 +96,7 @@ def heading(left, right):
 
 def entry(left, right, bullets):
     items = [heading(left, right)]
-    items.extend(paragraph(text, bullet_style) for text in bullets)
+    items.extend(Paragraph(text, bullet_style, bulletText="\u2022") for text in bullets)
     items.append(Spacer(1, 3))
     return KeepTogether(items)
 
