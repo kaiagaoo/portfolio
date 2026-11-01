@@ -54,7 +54,7 @@ export default function Home() {
             <h1 id="name-heading">Qianwen (Kaia) Gao</h1>
             <p className="intro-meta">Based in Greater Boston · Master of Computational Social Science, UC Berkeley</p>
             <p className="intro-text">
-              I study how AI agents can ground language and reasoning through perception and action—and how we can determine whether their apparent reasoning faithfully reflects what drives their behavior. Building on my work in behavioral evaluation, I am interested in interpretable embodied agents that integrate language, memory, commonsense reasoning, and planning while learning from interaction with the physical world. My goal is to develop agents whose decision processes can be tested through intervention, whose explanations are faithful, and whose actions remain open to human guidance and correction.
+              My research interests center on <strong>AI interpretability and evaluation</strong>, with a focus on understanding the mechanisms that drive AI behavior beyond observable outputs and self-reported reasoning. I am particularly interested in behavioral evaluation, causal interventions, and mechanistic interpretability as approaches to investigating reasoning, decision-making, and alignment in AI models and agents, with broader interests in multimodal and embodied intelligence
             </p>
             <p className="opportunity-note">I am seeking research assistant opportunities in the Greater Boston area.</p>
             <div className="intro-links">
