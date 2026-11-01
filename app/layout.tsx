@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Qianwen (Kaia) Gao | Interpretable AI & Embodied Intelligence',
+  title: 'Qianwen (Kaia) Gao | AI Interpretability & Evaluation',
   description:
-    'Qianwen (Kaia) Gao studies grounded reasoning, faithful explanations, and interpretable embodied agents, building on work in behavioral evaluation.',
+    'Qianwen (Kaia) Gao studies AI interpretability and evaluation through behavioral tests, causal interventions, and mechanistic analysis, with broader interests in multimodal and embodied intelligence.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

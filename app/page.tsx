@@ -73,18 +73,18 @@ export default function Home() {
         </section>
 
         <section id="research" aria-labelledby="research-heading">
-          <h2 id="research-heading">Research interests</h2>
+          <h2 id="research-heading">Research questions</h2>
           <div className="interest">
-            <h3>Grounding through interaction</h3>
-            <p>How do perception and action change what an agent understands about causality and affordances? I want to study how physical interaction can test and refine representations learned from language and images.</p>
+            <h3>Behavioral and causal evaluation</h3>
+            <p>How do changes in evidence, context, or goals affect a model’s decisions, and what do those changes reveal about the factors driving its behavior?</p>
           </div>
           <div className="interest">
-            <h3>Faithful explanations</h3>
-            <p>Can an explanation predict how an agent’s behavior changes when we intervene on its representations, memory, or goals? I am interested in testing interpretability claims against what actually causes a decision.</p>
+            <h3>Mechanistic interpretability</h3>
+            <p>Which internal representations and computations support reasoning, and can targeted interventions establish their causal role?</p>
           </div>
           <div className="interest">
-            <h3>Human-guided embodied agents</h3>
-            <p>How can language, memory, commonsense reasoning, and planning work together as agents act in the world? I want agents that can revise plans, communicate uncertainty, and accept human correction.</p>
+            <h3>Multimodal and embodied intelligence</h3>
+            <p>How can these evaluation and interpretability methods extend to agents that combine language with perception and action?</p>
           </div>
         </section>
 
